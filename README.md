@@ -32,21 +32,15 @@ Transfer learning dramatically outperforms training from scratch, even with a sm
 ## Pipeline
 
 ```
-Raw PCB Images + XML Annotations
-        |
-Bounding Box Crop Extraction (padding=20px)
-        |
-Train / Val / Test Split (70 / 15 / 15)
-        |
-Data Augmentation (flips, rotations, ImageNet normalization)
-        |
-Model Training x 3
-        |
-Evaluation + Confusion Matrix
-        |
-Grad-CAM + SHAP Explainability
-        |
-Gradio Interactive Demo
+```mermaid
+flowchart TD
+    A[Raw PCB Images + XML Annotations] --> B[Bounding Box Crop Extraction]
+    B --> C[Train / Val / Test Split 70-15-15]
+    C --> D[Data Augmentation]
+    D --> E[Model Training x3]
+    E --> F[Evaluation + Confusion Matrix]
+    F --> G[Grad-CAM + SHAP Explainability]
+    G --> H[Gradio Interactive Demo]
 ```
 
 ---
