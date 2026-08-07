@@ -116,10 +116,10 @@ PCB Defects by akhatova, available on Kaggle: https://www.kaggle.com/datasets/ak
 - XML bounding box annotations per defect instance
 - Crops extracted per annotation for more training samples
 
-**Option 1 — Kaggle (recommended)**
+**Option 1 - Kaggle (recommended)**
 Add the dataset via Add Data and search "PCB Defects (akhatova)" in Kaggle notebooks.
 
-**Option 2 — Local**
+**Option 2 - Local**
 ```bash
 kaggle datasets download -d akhatova/pcb-defects
 unzip pcb-defects.zip -d pcb_data
