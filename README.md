@@ -31,7 +31,7 @@ Transfer learning dramatically outperforms training from scratch, even with a sm
 
 ## Pipeline
 
-```
+
 ```mermaid
 flowchart TD
     A[Raw PCB Images + XML Annotations] --> B[Bounding Box Crop Extraction]
@@ -43,7 +43,7 @@ flowchart TD
     G --> H[Gradio Interactive Demo]
 ```
 
----
+
 
 ## Models
 
